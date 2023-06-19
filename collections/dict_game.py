@@ -1,3 +1,10 @@
+"""
+Dictionary game
+Given a menu food
+Then Select a food item
+Calculate the total
+print it out
+"""
 menu = {"pizza": 3.00,
         "popcorn": 5.5,
         "fries": 6.7,
@@ -15,11 +22,12 @@ print("-------END--------")
 
 # select food, if not select q to quit
 is_quit = False
+food_menu_items = menu.keys()
 while not is_quit:
-    input_food = input("Please select food item (select q to quit): ").lower()
-    if input_food in menu.keys():
-        cart.append(input_food)
-    elif input_food == "q":
+    input_food_item = input("Please select food item (select q to quit): ").lower()
+    if input_food_item in food_menu_items:
+        cart.append(input_food_item)
+    elif input_food_item == "q":
         is_quit = True
 
 print()

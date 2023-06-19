@@ -23,4 +23,3 @@ def that():
 
 
 print(this() and that())
-
