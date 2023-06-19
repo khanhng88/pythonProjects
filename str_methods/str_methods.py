@@ -6,7 +6,7 @@ Learn some useful str methods
 # result = len(name)  # length includes space
 # print(result)
 # print(name.find(" "))  # return position of the first occurence
-# print(name.rfind("n"))
+# print(name.rfind("n")) # return position of specific char
 # print(name.rfind("x"))  # return -1 if unfound
 # print(name.capitalize())
 # print(name.upper())

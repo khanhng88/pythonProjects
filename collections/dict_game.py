@@ -33,6 +33,7 @@ while not is_quit:
 print()
 print("----YOUR ORDER-----")
 for cart_item in cart:
-    print(f"{cart_item:10}: ${menu.get(cart_item)}")
+    print(f"{cart_item:10}: ${menu.get(cart_item):.2f}")
     total += menu.get(cart_item)
-print(f"The total of your order is ${total:.2f}")
+print("--------------------")
+print(f"Total is ${total:.2f}")
